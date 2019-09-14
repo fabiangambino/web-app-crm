@@ -10,9 +10,6 @@ def about(request):
 def advanded_search(request):
     return render(request, 'advanced-search.html')
 
-def contact_view(request):
-    return render(request, 'contact-view.html')
-
 def dashboard(request):
     return render(request, 'dashboard.html')
 

@@ -8,6 +8,8 @@ from django.conf import settings
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.login),
+    url(r'^notes/', include('notes.urls')),
+    url(r'^profiles/', include('contacts.urls')),
     url(r'^results/', views.results),
     url(r'^search/', views.advanced_search),
     url(r'^dashboard/', views.dashboard),

@@ -16,6 +16,8 @@
         <th>Email Address</th>
         <th>Contact Type</th>
         <th>Owner</th>
+        <th>Date Created</th>
+        <th>Last Updated</th>
       </tr>
       {% for contact in contacts %}
       <tr>
@@ -27,6 +29,7 @@
         <td>{{contact.contact_type}}</td>
         <td>{{contact.owner}}</td>
         <td>{{contact.date_created}}</td>
+        <td>{{contact.last_updated}}</td>
       {% endfor %}
       </tr>
     </table>

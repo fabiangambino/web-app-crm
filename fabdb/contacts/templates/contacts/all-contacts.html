@@ -7,6 +7,28 @@
     <p>This page will have a table of all contacts in the database.</p>
   </head>
   <body>
-
+    <table style="width:100%">
+      <tr>
+        <th>Contact ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone Number</th>
+        <th>Email Address</th>
+        <th>Contact Type</th>
+        <th>Owner</th>
+      </tr>
+      {% for contact in contacts %}
+      <tr>
+        <td>{{contact.contact_id}}</td>
+        <td>{{contact.first_name}}</td>
+        <td>{{contact.last_name}}</td>
+        <td>{{contact.phone_number}}</td>
+        <td>{{contact.email_address}}</td>
+        <td>{{contact.contact_type}}</td>
+        <td>{{contact.owner}}</td>
+        <td>{{contact.date_created}}</td>
+      {% endfor %}
+      </tr>
+    </table>
   </body>
 </html>

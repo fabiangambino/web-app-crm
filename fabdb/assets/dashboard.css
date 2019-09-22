@@ -1,0 +1,48 @@
+body,
+html{
+  min-height: 100%;
+}
+
+body{
+  font-family: "Lucida Console", Monaco, serif;
+  background-image: url(/static/horizon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+img{
+  position: relative;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:-65px;
+  margin-bottom: -55px;
+}
+
+h1{
+  position: relative;
+  margin-top: -16px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+  color: #003366;
+}
+
+table{
+  width: 100%;
+}
+
+table th{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 18px;
+  font-style: italic;
+  color: #003366;
+}
+
+table tr{
+  text-align: center;
+  font-size: 16px;
+  color: #151B54;
+}

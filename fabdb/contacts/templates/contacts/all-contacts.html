@@ -1,13 +1,16 @@
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>All Contacts</title>
-    <h1>All Contacts</h1>
-    <p>This page will have a table of all contacts in the database.</p>
   </head>
   <body>
-    <table style="width:100%">
+    <link rel="stylesheet" href="{% static 'all-contacts.css' %}">
+    <img src="/static/fabdb.png" alt="fabdb logo">
+    <h1>All Contacts</h1>
+    <table>
       <tr>
         <th>Contact ID</th>
         <th>First Name</th>

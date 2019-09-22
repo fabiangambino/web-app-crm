@@ -1,10 +1,19 @@
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Login</title>
-    <h1>Welcome to fabDB</h1>
-    <p>This will be my login screen</p>
+      <link rel="stylesheet" href="{% static 'login.css' %}">
+        <img src="/static/fabdb.png" alt="fabdb logo">
+        <h1>Login</h1>
+    {% block content %}
+      <form class="login-form" action="login.html" method="post">
+        {{form}}
+        <input type="submit" value="Login">
+      </form>
+    {% endblock %}
   </head>
   <body>
 

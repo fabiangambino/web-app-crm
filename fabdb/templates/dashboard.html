@@ -1,12 +1,15 @@
+{% load static from staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Dashboard</title>
-    <h1>Welcome to fabDB Dashboard</h1>
-    <p>This will be my main dashboard view after logging in.</p>
+    <link rel="stylesheet" href="{% static 'all-contacts.css' %}">
   </head>
   <body>
-
+    <img src="/static/fabdb.png" alt="fabdb logo">
+    <h1>Welcome to fabDB Dashboard</h1>
+    <p>This will be my main dashboard view after logging in.</p>
   </body>
 </html>

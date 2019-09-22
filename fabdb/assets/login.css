@@ -1,0 +1,58 @@
+body,
+html{
+  min-height: 100%;
+}
+
+body{
+  font-family: "Lucida Console", Monaco, serif;
+  background-image: url(/static/horizon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+img{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+h1{
+  position: relative;
+  text-align: center;
+  margin-top: -40px;
+  font-size: 22px;
+  color: #003366;
+}
+
+.login-form{
+  position: relative;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 175px;
+  display: block;
+  border: 2px solid #003366;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.login-form label{
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.login-form input{
+  font-size: 14px;
+  display: block;
+}
+
+.login-form button{
+  font-size: 30px;
+  display: block;
+}

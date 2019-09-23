@@ -8,12 +8,13 @@
       <link rel="stylesheet" href="{% static 'login.css' %}">
         <img src="/static/fabdb.png" alt="fabdb logo">
         <h1>Login</h1>
-    {% block content %}
-      <form class="login-form" action="login.html" method="post">
-        {{form}}
-        <input type="submit" value="Login">
-      </form>
-    {% endblock %}
+        {% block content %}
+          <form class="login-form" action="/profiles/" method="post">
+            {% csrf_token %}
+            {{form}}
+            <input type="submit" class="loginbutton" value="Login">
+          </form>
+        {% endblock %}
   </head>
   <body>
 

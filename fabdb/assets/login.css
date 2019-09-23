@@ -52,7 +52,6 @@ h1{
   display: block;
 }
 
-.login-form button{
-  font-size: 30px;
-  display: block;
+.loginbutton{
+  margin-top: 10px;
 }

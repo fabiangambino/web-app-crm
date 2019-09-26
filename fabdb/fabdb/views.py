@@ -1,12 +1,15 @@
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import login
 
 def login(request):
     if request.method == 'POST':
         form = AuthenticationForm(data=request.POST)
         if form.is_valid():
             #log in the user
+            user = form.get_user()
+            login(request, user)
             return redirect('/dashboard')
     else:
         form = AuthenticationForm()

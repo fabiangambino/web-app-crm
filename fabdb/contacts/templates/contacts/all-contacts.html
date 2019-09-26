@@ -25,8 +25,8 @@
       {% for contact in contacts %}
       <tr>
         <td>{{contact.contact_id}}</td>
-        <td>{{contact.first_name}}</td>
-        <td>{{contact.last_name}}</td>
+        <td><a href="/profiles/contact">{{contact.first_name}}</td></a>
+        <td><a href="/profiles/contact">{{contact.last_name}}</td></a>
         <td>{{contact.phone_number}}</td>
         <td>{{contact.email_address}}</td>
         <td>{{contact.contact_type}}</td>

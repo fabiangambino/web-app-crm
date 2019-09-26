@@ -7,8 +7,7 @@ def login(request):
         form = AuthenticationForm(data=request.POST)
         if form.is_valid():
             #log in the user
-            return redirect('templates:login')
-
+            return redirect('/dashboard')
     else:
         form = AuthenticationForm()
     return render(request, "login.html", {'form':form})

@@ -8,7 +8,18 @@
     <link rel="stylesheet" href="{% static 'all-contacts.css' %}">
   </head>
   <body>
-    <img src="/static/fabdb.png" alt="fabdb logo">
+    <img src="/static/fabdb-test-logo.png" alt="fabdb logo">
+    <nav>
+      <p>Welcome {{user.first_name}} ,</p>
+      <ul>
+        <li>
+          <form class="logout-link" action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <input type="submit" class="logoutbutton" value="Logout">
+          </form>
+        </li>
+      </ul>
+    </nav>
     <h1>Welcome to fabDB Dashboard</h1>
     <p>This will be my main dashboard view after logging in.</p>
   </body>

@@ -8,7 +8,7 @@
 
 3. Create a base layout that will be used for the majority of views which will include a nav including clickable buttons that redirect to various views.
 
-4. Created an advanced search form that works in the same manner as the quick search form from dashboard with extended search options.
+4. Create an advanced search form that works in the same manner as the quick search form from dashboard with extended search options.
 
 ## Completed
 

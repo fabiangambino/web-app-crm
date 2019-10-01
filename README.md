@@ -1,6 +1,6 @@
-# H1 fabdB
+# fabdB
 
-## H2 To Do List
+## To Do List
 
 1. Add dashboard table of 10 recent touched/searched/updated clients unique to the logged in user. User can click on these contacts which will send them to the individual contact view.
 
@@ -10,6 +10,6 @@
 
 4. Created an advanced search form that works in the same manner as the quick search form from dashboard with extended search options.
 
-## H2 Completed
+## Completed
 
 1. Completed authentication login feature logout button with redirection to dashboard.

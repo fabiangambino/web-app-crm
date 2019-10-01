@@ -10,6 +10,8 @@
 
 4. Create an advanced search form that works in the same manner as the quick search form from dashboard with extended search options.
 
+5. Create a feature that allows for exporting customizable contact data based on select object attributes. (exportable reports)
+
 ## Completed
 
 1. Completed authentication login feature logout button with redirection to dashboard.

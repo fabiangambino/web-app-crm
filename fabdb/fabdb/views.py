@@ -21,10 +21,19 @@ def logout_view(request):
         return redirect('/')
 
 def results(request):
-    return render(request, "results.html")
+    if not request.user.is_authenticated:
+        return redirect('/')
+    else:
+        return render(request, "results.html")
 
 def advanced_search(request):
-    return render(request, "advanced-search.html")
+    if not request.user.is_authenticated:
+        return redirect('/')
+    else:
+        return render(request, "advanced-search.html")
 
 def dashboard(request):
-    return render(request, "dashboard.html")
+    if not request.user.is_authenticated:
+        return redirect('/')
+    else:
+        return render(request, "dashboard.html")

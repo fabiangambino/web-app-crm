@@ -15,3 +15,5 @@
 ## Completed
 
 1. Completed authentication login feature logout button with redirection to dashboard.
+
+2. Completed login requirements for all views other than the login page. Users must be logged in to have access to any page on the website. If not, they are redirected to the login page.

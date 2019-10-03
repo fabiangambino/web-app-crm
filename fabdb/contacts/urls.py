@@ -6,5 +6,5 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^$', views.all_contacts),
-    url(r'^contact', views.contact_view),
+    url(r'^contact/', views.contact_view),
 ]
